@@ -1,0 +1,153 @@
+<!--style.css-->
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: black;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    div#top{
+        background: none !important;
+        padding-bottom: 0px !important;
+    }
+    .jumbotron{
+        width: auto !important;
+        background-size: cover;
+        margin-bottom: 0px !important;
+    }
+    .jumbotron h1{
+        font-weight: 300 !important;
+    }
+    div.page-header small{
+        font-size: 21px;
+    }
+    div.about p{
+        font-size: 25px;
+    }
+    .muted{
+        font-size: 20px !important;
+    }
+    .contact{
+        background: #ddd !important; 
+    }
+    div.about{
+        padding-top: 0px !important;
+    }
+}
+
+.content {
+    font-size: 1.5vw;
+}
+.navbar{
+    box-shadow: 1px 1px 2px #ddd;
+    background-color: rgba(248,248,248,.9);
+}
+.nav span.glyphicon{
+    font-size: 20px;
+}
+.navback {
+    background-color: #ccc;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+    background-size: 50px 50px;
+}
+div#top{
+    background-image: url(images/newback.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 10% 0px 20%;
+}
+ul {
+    text-decoration:none;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+.muted {
+    color: #999999;
+    margin: 20px;
+    font-size: .75em;
+    text-align: center;
+}
+.page-header{
+    margin-bottom: 40px;
+}
+.jumbotron {
+    width:43%;
+    min-width: 43%;
+    background: transparent;
+}
+.jumbotron h1{
+    color: #5e5896;
+    margin: 45px 0;
+    text-align: center;
+    font-weight: 700;
+}
+div.page-header h1{
+    font-size: 67px;
+    margin-bottom: 0px;
+}
+div.page-header small{
+    color: #666;
+}
+#footer {
+    height: 50px;
+    /*border-top: 1px solid #068587;*/
+}
+.about{
+    word-wrap: break-word;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.contact {
+    word-wrap: break-word;
+    background: url(images/newback.png) no-repeat fixed;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    padding: 60px 30px;
+    background-size: 120%;
+}
+.contact .page-header{
+    border-bottom: 1px solid #999;
+}
+.contact .page-header h1{
+    color: #111;
+}
+.contact .input-group{
+    margin-bottom: 10px;
+}
+
+.sec2{
+    width:95%;
+}
+h2 {
+    font-size: 2.5em;
+}
+div#socials{
+    margin: 10px auto 25px;
+    border-bottom: 1px solid #999;
+    position: relative;
+    width: 70%;
+    text-align: center;
+}
+div#socials img{
+    transition: all .2s ease-in;
+    position: relative;
+    top: 15px;
+}
+div#socials img:hover{
+    transition: all .2s ease-in;
+    transform: translateY(-5px);
+}

@@ -1,0 +1,7 @@
+<section>
+<?php
+
+phpinfo();
+
+?>
+</section>

@@ -1,0 +1,27 @@
+<?php # main html view banner, logo and login/register links, starts header ?>
+<<<<<<< HEAD
+	<header>
+		<section id="topBar" class="topBar">
+			<h1 id="logo"><img src="../../images/blinkSecure.fw.png" width="300" height="100"  alt=""/></h1>
+=======
+
+	<header>
+		<section id="topBar" class="topBar">
+			<h1 id="logo"><img src=<?php echo '"'.$rootLoc.'/images/blinkSecure.fw.png"'; ?> width="300" height="100"  alt=""/></h1>
+			<!-- <div id="loginform">
+				<a href="./members" class="button">Login</a>
+				<a href="" class="button">Register</a>
+			</div> -->
+		</section>
+
+<?php # nav for entire blink page. TODO: CONDITIONAL LOGIC ?>
+		<nav>
+			<ul> <!-- all on the same line to avoid whitespace separators -->
+				<li class="navButton"><a href=<?php echo '"'.$rootLoc.'/about"'; ?> >About</a></li>
+                <li class="navButton"><a href=<?php echo '"'.$rootLoc.'/store"'; ?> >Store</a></li>
+                <li class="navButton"><a href=<?php echo '"'.$rootLoc.'/contact"'; ?> >Contact</a></li>
+			</ul>
+		</nav>
+
+
+	</header>	

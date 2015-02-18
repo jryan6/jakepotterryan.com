@@ -1,0 +1,243 @@
+/*************CSS 3- must select option for 'CSS level 3' in validation*****************************/
+
+body {
+	font-size:14px;
+	color:#666;
+	background:#111111 no-repeat;
+
+	/*CSS3 Radial Gradients*/
+     /* fallback for non-supporting browsers  
+        background-image: -webkit-gradient(radial, center center, 0, center center, 141, from(black), to(white), color-stop(25%, blue), color-stop(40%, green), color-stop(60%, red), 			color-stop(80%, purple)); 
+		/* old WebKit Syntax 
+        background-image: -webkit-radial-gradient(center center, circle contain, #00CCFF 0%,#006699 25%, #003366 40%, #0C2129 60%, black 80%, black 100%); /* New WebKit syntax  
+        background-image: -moz-radial-gradient(center center, circle contain, #999999 0%, #999999 25%, #333333 40%, #333333 60%, black 80%, black 100%);  
+        background-image: -ms-radial-gradient(center center, circle contain, #00CCFF 0%, #006699 25%, #003366 40%, #0C2129 60%, black 80%, black 100%); /* IE10 
+        background-image: -o-radial-gradient(center center, circle contain, #00CCFF 0%, #006699 25%, #003366 40%, #0C2129 60%, black 80%, black 100%); /* Opera (13?) */  
+     	
+	font-family:Bebas;
+	font-style:italic;
+	letter-spacing:.08em;
+}
+
+a{
+	font-size:14px;
+	color:#666;
+	font-family:Bebas;
+	font-style:italic;
+	letter-spacing:.08em;
+}
+
+.records{
+	width:80%;
+	border:thin;
+	border-color:#FFFFFF;
+	padding:5em;
+	text-align:left;
+	border-spacing:3em;
+}
+
+.red{
+	color:#ff6666;
+    padding: none;
+    margin: none;
+    text-align: right;
+    list-style: none;
+}
+
+.green{
+	color:#00CC00;
+    padding: none;
+    margin: none;
+    text-align: right;
+    list-style: none;
+}
+
+.apparel{
+	border:solid 1px #FFFFFF;
+	border-spacing:20px;
+	padding:30px;
+	width:90%;
+}
+
+.style2{
+    padding-bottom:0%;
+}
+
+p{
+	text-align:left;
+	font-family:helvetica;
+	font-size:20px;
+	width:55%;
+	color:#E6E6E6;
+	padding-left:20%;
+	padding-top:1%;
+	font-weight:bold;	
+}
+
+
+form{
+	font-family:Bebas;
+	color: #BAEDFF;
+	border-color:#999999;
+	width:50%;
+	font-size:18px;
+}
+
+h1{
+	font-size:100px;
+	color:#FFFFFF;
+	letter-spacing:0em;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin-bottom: 0%;
+    margin-top: 3%;
+}
+
+h3 {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size:32px;
+	text-align:left;
+	color:#82EFEC;
+    margin-bottom: 0%; margin-top: 0%
+}
+
+h4{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size:20px;
+	text-align:left;
+	color:#82EFEC;
+}
+
+h5{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size:2em;
+    font-weight:500;
+    text-align: center;
+    margin-top: 0%;
+}
+
+img{
+	left:565px;
+	position:absolute;
+}
+
+
+#navigationMenu 
+li {
+	list-style:none;
+	height:39px;
+	padding:2px;
+	width:40px;
+}
+
+#navigationMenu 
+span {
+	/* Container properties */
+	width:0;
+	left:38px;
+	padding:0;
+	position:absolute;
+	overflow:hidden;
+
+	/* Text properties */
+	font-family:'Myriad Pro',Arial, Helvetica, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	letter-spacing:0.6px;
+	white-space:nowrap;
+	line-height:39px;
+
+	/* CSS3 Transition: */
+	-webkit-transition: 0.25s;
+
+	/* Poofing:*/ 
+	-moz-transition: 0.25s;
+	transition: 0.25s;
+}
+
+#navigationMenu
+a{
+	/* The background sprite: */
+	background-image:url(woodTexture.jpg);
+	
+	height:39px;
+	width:38px;
+	display:block;
+	position:relative;
+}
+
+/* General hover styles */
+
+#navigationMenu 
+a:hover span { width:auto; padding:0 20px;overflow:visible; }
+
+#navigationMenu
+a:hover {
+	text-decoration:none;
+	/* CSS outer glow with the box-shadow property */
+	-moz-box-shadow:0 0 10px #9ddff5;
+	-webkit-box-shadow:0 0 10px #9ddff5;
+	box-shadow:0 0 10px #9ddff5;
+}
+
+/* Home Button */
+
+#navigationMenu 
+.home {	background-position:50px 0;}
+
+#navigationMenu 
+.home:hover {background-position:50px -39px;}
+
+#navigationMenu 
+.home span {
+	background-color:#661f83;
+	color:#ffc1fc;
+	text-shadow:3px 3px 0 #2d1031;
+}
+
+/* About Button */
+
+#navigationMenu 
+.about { background-position:-38px 0;}
+
+#navigationMenu
+.about:hover { background-position:-38px -39px;}
+
+#navigationMenu
+.about span {
+	background-color:#62B3CE;
+	color:#0F2020;
+	text-shadow:2px 2px 0 #73f3e7;
+}
+
+/* Hookup Button */
+
+#navigationMenu
+.hookup { background-position:-76px 0;}
+
+#navigationMenu
+.hookup:hover { background-position:-76px -39px;}
+
+#navigationMenu
+.hookup span{
+	background-color:#C26110;
+	color:#000000;
+	text-shadow:2px 2px 0 #FF9C26;
+}
+
+/* Store Button */
+
+#navigationMenu
+.store { background-position:-114px 0;}
+
+#navigationMenu
+.store:hover{ background-position:-114px -39px;}
+
+#navigationMenu
+.store span {
+	background-color:#43CB48;
+	color:#232323;
+	text-shadow:2px 2px 0 #92FF89;
+}
+.notice {
+    font-style: italic;
+}

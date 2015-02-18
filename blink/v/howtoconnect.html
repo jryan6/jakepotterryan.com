@@ -1,0 +1,38 @@
+<section>
+	<h1>Group Access</h1>
+	<p>Try it out, and edit this file!!
+	Open up a bash prompt,
+	and type
+	<pre class="code">ssh NETID@zoo.uvm.edu nano /users/c/d/cdavenp1/public_html/blink/v/test.html</pre>
+	type ctrl+x to save and quit</p>
+
+	<p>OR! If you're on windows, open up your ftp program. Ftp into zoo.uvm.edu . Change the directory to "/users/c/d/cdavenp1/public_html/blink/", open up any file and edit. HOWEVER: Please, instead, use bitbucket and edit code locally and push remotely. It works much nicer for sharing code. The instructions to get it set up follow.</p>
+
+	<h2>Installing Bitbucket</h2>
+	<p>Instructions for bitbucket: To get the code for this website locally, you will need to have git installed and have a bitbucket account. Once git is installed, open up a terminal, navigate to the directory you normally code in (for me, that's either /var/www/ or ~/code; I am in linux), type </p>
+	<pre class="code">git clone https://BITBUCKETUSERNAME@bitbucket.org/cdavenp1/blinkweb.git</pre>
+	<p>NOTE: CHANGE BITBUCKET USERNAME TO YOUR USERNAME! Next you will want to type</p>
+	<pre class="code">cd blinkweb<br>git remote</pre>
+	<p>If this outputs anything other than 'origin' change that keyword in the next line, if it outputs any errors, you've got some issues and should email me. Next type:</p>
+	<pre class="code">git remote set-url --add origin ssh://NETID@zoo.uvm.edu/users/c/d/cdavenp1/public_html/repos/blinkweb.git/</pre>
+	<p>NOTE: CHANGE NETID TO YOUR UVM NETID!! Now is time for the fun stuff. Using your favorite text editor, jump in and start changing code! If you find yourself needing to make new files, or want to use old files you already had - type:</p>
+	<pre class="code">git add .</pre>
+	<p>Note: to do this you will need to be in the 'blinkweb' directory that was created when you cloned in. This will be the directory that has a .git file (this file may be hidden in your file manager but if you are running mac or linux you can type ls -la in a terminal in the directory to find it). Now we will tell git that you want to commit these changes (or tell git to keep track of the changes we've made recently)</p>
+	<pre class="code">git commit -am "Message of a brief summary of changes I've made"</pre>
+	<p>note the flag -am, this is a combined flag of -a (or commit all changes and files) and -m (the commit message, this shows up on bitbucket and is used to help keep track of different changes. You can use a commit message like "testing" or "debugging", but try to be more descriptive - "Adding bitbucket instructions to test.html view" when you can).</p>
+	<p>Currently, all these changes have been local. If you go to <a href="http://www.uvm.edu/~cdavenp1/blink">http://www.uvm.edu/~cdavenp1/blink</a>, or <a href="https://bitbucket.org/cdavenp1/blinkweb">https://bitbucket.org/cdavenp1/blinkweb</a>, nothing will have actually changed. To change the code on these 'remote' destinations, type </p>
+	<pre class="code">git push</pre>
+	<p>You should see a lot of activity pop up from git, and it should ask you for your Bitbucket password, followed by your UVM NetID password. If you see these lines:</p>
+	<pre class="code">
+	...........
+	To https://BITBUCKETUSERNAME@bitbucket.org/cdavenp1/blinkweb.git
+	6e6caa6..c952368  master -> master
+	............
+	To ssh://NETID@zoo.uvm.edu/users/c/d/cdavenp1/public_html/repos/blinkweb.git/
+	6e6caa6..c952368  master -> master
+	..........
+   </pre>
+   <p>it should mean that it was submitted correctly. Check uvm.edu and/or bitbucket to see your changes. If you have any problems please email myself (cdavenp1 at uvm.edu) or someone else in the group.</p>
+   <p>Another fun fact: if you are using Sublime Text and are looking for a command-line free way to use git, type ctrl+shift+p "Package Control: Install Package". There are a few packages for managing git - I personally use "SublimeGit". I can type ctrl+shift+p, and quickly commit (like typing git commit -am "message"), and push to both repos, all from sublime text.
+   Also, if you are running Linux (and maybe even mac), it might be worth looking into installing the LAMP stack (linux, apache, mysql, php) for your distro, it allows you to view code locally in your browser without having to push to uvm.edu.</p>
+</section>
