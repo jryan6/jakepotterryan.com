@@ -122,7 +122,7 @@
                     <div class="no-pad col-xs-6">
                         <img class="scale-image" src="images/sequoia-pic-sm.jpg" alt="at the entrance of the Sequoia National Park"/>
                         <div class="img-over" style="opacity:0;">
-                            <p class="img-desc" style="opacity:0;">Entering the Sequoia Natl. Forest.</p>
+                            <p class="img-desc" style="opacity:0;">Entering the Sequoia Natlional Forest.</p>
                         </div>
                     </div>
                     <div class="no-pad col-xs-6">
